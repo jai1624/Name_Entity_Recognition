@@ -31,6 +31,8 @@ git diff main..dockerfile
 git merge dockerfile
 **- ## Pull request for approvel by TL**
   conflict needs to be changed manually and resolved
+git pull origin main
+
 
 
 
