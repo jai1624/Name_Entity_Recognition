@@ -1,0 +1,7 @@
+gradio
+pdfminer.six==20221105
+spacy==3.5.2
+spacy-transformers==1.2.5
+transformers==4.28.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.0+cpu
