@@ -1,0 +1,29 @@
+version: '3'
+services:
+  biomed:
+    build:
+      context: ./bio_medical_ner/bio_medical_ner_pre-trained_model
+    ports:
+      - 7000:7000
+    depends_on:
+      - diseasener
+  diseasener:
+      build:
+        context: ./bio_medical_ner/Disease-Ner-Bio-Med/UI-APP-TEST
+      ports:
+        - 7001:7001
+  fashionner:
+    build:
+      context: ./bio_medical_ner/Fashion-Brand
+    ports:
+      - 7002:7002
+  touristner:
+    build:
+      context: ./bio_medical_ner/Tourist_NER
+    ports:
+      - 7003:7003
+#  spacycv:
+#    build:
+#      context: ./bio_medical_ner/Spacy-CV-NER/UI-APP-SPACY
+#    ports:
+#      - 7004:7004
